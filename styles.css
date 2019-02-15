@@ -14,7 +14,7 @@ a{
   flex-wrap: wrap;
   width: 90%;
   text-align: center;
-  justify-content: space-around;s
+  justify-content: space-around;
 }
 .career{
   width: 90%;
@@ -49,4 +49,18 @@ button{
   padding: 1%;
   color: red;
 
+}
+.cards{
+  width: 100%;
+  background: cyan;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.card {
+width: 28%;
+padding: 1%;
+box-shadow: 2px 2px 2px 2px black;
+margin: 1%;
+text-align: center;
 }

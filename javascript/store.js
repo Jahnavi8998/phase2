@@ -1,4 +1,4 @@
-function Submit(){
+function submit(){
   var career=document.getElementById('career').value;
   var name=document.getElementById('name').value;
     var rollno=document.getElementById('rollno').value;
@@ -8,7 +8,7 @@ function Submit(){
     var dcollege=document.getElementById('dcollege').value;
     var Branch=document.getElementById('Branch').value;
     var dmarks=document.getElementById('dmarks').value;
-    var Inter=document.getElementById('Inter').value;
+    var degree=document.getElementById('idegree').value;
       var icollege=document.getElementById('icollege').value;
      var ibranch=document.getElementById('ibranch').value;
       var imarks=document.getElementById('imarks').value;
@@ -28,7 +28,7 @@ function Submit(){
     //upgradeneeded
     request.onupgradeneeded=function(e){
       result=e.target.result;
-      store=result.createObjectStore("resume",{KeyPath:'Id',autoIncrement:true});
+      store=result.createObjectStore("resume",{keyPath:'Id',autoIncrement:true});
     }
     //success
     request.onsuccess=function(e){
@@ -36,8 +36,9 @@ function Submit(){
       result=e.target.result;
       var tx=result.transaction("resume","readwrite");
       store=tx.objectStore("resume");
-      store.put({
-        co:career,
+      store.put(
+        {
+        CO:career,
         Name:name,
         Rollno:rollno,
         PhoneNumber:phonenumber,
@@ -45,11 +46,11 @@ function Submit(){
         Education:[{
           Degree:Degree,
           college:dcollege,
-          branch:branch,
+          branch:Branch,
           marks:dmarks
         },
         {
-          Degree:idegree,
+          Degree:degree,
           college:icollege,
           branch:ibranch,
           marks:imarks
@@ -64,7 +65,8 @@ function Submit(){
       });
     }
     //error
-    request.onerror=function(e){
+    request.onerror=function(e) {
       console.log("error"+e);
     }
+    window.open("index.html","_self");
 }
