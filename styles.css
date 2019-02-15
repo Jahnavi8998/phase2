@@ -1,0 +1,52 @@
+header{
+  background-color: pink;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+a{
+  font-size: 35px;
+  margin-left: 80%;
+}
+/* form stylesheet*/
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  text-align: center;
+  justify-content: space-around;s
+}
+.career{
+  width: 90%;
+  background-color: cyan;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+  border: 2px solid #000000;
+  box-shadow: 2px 2px 2px 2px #000000;
+}
+.career input{
+  width: 80%;
+}
+.sub{
+  width: 40%;
+  background-color: cyan;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+  border: 2px solid #000000;
+  box-shadow: 1px 1px 1px 1px #000000;
+}
+.sub input, .sub select{
+  width: 90%;
+  padding: 1%;
+  margin: 1%;
+  font-size: lem;
+}
+button{
+  font-size: 23px;
+  font-weight: bold;
+  padding: 1%;
+  color: red;
+
+}
