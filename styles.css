@@ -4,7 +4,7 @@ header{
   font-weight: bold;
   text-align: center;
 }
-a{
+.a{
   font-size: 35px;
   margin-left: 80%;
 }
@@ -58,9 +58,86 @@ button{
 
 }
 .card {
-width: 28%;
+width: 30%;
 padding: 1%;
 box-shadow: 2px 2px 2px 2px black;
 margin: 1%;
 text-align: center;
+}
+.left{
+  width: 30%;
+  background: #dda;
+  box-shadow: 5px 5px 5px 5px blue;
+}
+.right{
+  margin: 1%;
+  padding: 1%;
+  background-color: pink;
+  box-shadow: 5px 5px 5px blue;
+}
+@media screen and (min-width:320px) and (max-width:480px){
+  .cards,.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .card,.sub{
+    width: 93%;
+
+  }
+  .career{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .left{
+    width: 93%;
+  }
+  .right{
+    width: 93%;
+  }
+}
+@media screen and (min-width:481px) and (max-width:800px){
+  .cards,.main {
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .card{
+    width: 43%;
+}
+.sub{
+  width: 93%;
+}
+.career,.main,{
+  margin-left: auto;
+  margin-right: auto;
+}
+button{
+  margin-left: 43%;
+}
+.left{
+  width: 93%;
+}
+.right{
+  width: 90%;
+}
+}
+@media screen and (min-width:801px) and (max-width:1500px){
+  .cards {
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .card{
+    width: 28%;
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+}
+.left{
+  width: 30%;
+}
+.right{
+  width: 63%;
+}
 }

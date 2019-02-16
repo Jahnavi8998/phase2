@@ -62,11 +62,13 @@ function submit(){
           marks:smarks
         }
       ],
+      skills:Skills
       });
+      window.open("index.html","_self");
     }
     //error
     request.onerror=function(e) {
       console.log("error"+e);
     }
-    window.open("index.html","_self");
+
 }
